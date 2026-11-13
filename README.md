@@ -1,16 +1,18 @@
 # Virtue ClockIn — Local Development Copy
 
+[![CI Pipeline](https://github.com/SrikarMahesh04/ci-cd-practice/actions/workflows/ci.yml/badge.svg)](https://github.com/SrikarMahesh04/ci-cd-practice/actions/workflows/ci.yml)
+
 Created 12-Oct-2026 from the current application. This is an independent source copy for organization-owned development and future hosting decisions. It retains the current features rather than reverting to an older implementation.
 
 No Git history, deployment workflows, hosting configuration, cloud project links, credentials, installed dependencies, database records, employee accounts or logs are included. Changes here do not update the existing hosted application. No hosting provider has been selected for this copy.
 
 ## Requirements
 
-- Node.js 22 and pnpm 11.25.0.
+- Node.js 20+ and npm.
 - Python 3.12+ and uv.
 - A new local PostgreSQL database, with organization-approved credentials.
 
-The frontend uses pnpm and its existing lockfile. The backend uses uv. The former root npm package was cloud infrastructure tooling and is not needed here. Install dependencies inside this folder; do not share the original application's virtual environment or database.
+The frontend uses npm with `package-lock.json`. The backend uses uv. Install dependencies inside this folder; do not share the original application's virtual environment or database.
 
 ## First setup
 
