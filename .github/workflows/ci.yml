@@ -53,8 +53,7 @@ jobs:
       - name: Backend Pip/Package Audit
         run: |
           cd backend
-          uv run python -m pip install pip-audit
-          uv run pip-audit || true
+          uvx pip-audit || true
 
   # =============================================================
   # 2. BACKEND CHECKS (Modular Jobs)
